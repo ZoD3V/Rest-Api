@@ -1,0 +1,53 @@
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{ 
+  "email":"adhi@gmail.com",
+  "password":"adhi"
+}
+
+###
+GET  http://localhost:5000/users
+
+###
+GET  http://localhost:5000/users/8
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{ 
+  "name":"eko",
+  "email":"eko@gmail.com",
+  "password":"eko"
+}
+
+###
+GET  http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{ 
+  "name":"adhi",
+  "email":"adhi@gmail.com",
+  "password":"adhi"
+}
+
+###
+PATCH  http://localhost:5000/users/12
+Content-Type: application/json
+
+{
+  "name":"adhi1",
+  "email":"adhi@gmail.com",
+  "password":"adhi"
+}
+
+###
+Delete  http://localhost:5000/users/7
